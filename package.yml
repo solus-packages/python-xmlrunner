@@ -1,0 +1,16 @@
+name       : python-xmlrunner
+version    : 1.7.7
+release    : 1
+source     :
+    - https://files.pythonhosted.org/packages/57/c0/a19e29bc6038a56bb690549573af6ea11a9d2a5c07aff2e27ed308c2cab9/xmlrunner-1.7.7.tar.gz : 5a6113d049eca7646111ee657266966e5bbfb0b5ceb2e83ee0772e16d7110f39
+license    : LGPL-3.0-or-later
+component  : programming.python
+summary    : PyUnit-based test runner with JUnit like XML reporting
+description: |
+    unittest-xml-reporting is a unittest test runner that can save test results to XML files that can be consumed by a wide range of tools, such as build systems, IDEs and continuous integration servers.
+builddeps  :
+    - pkgconfig(python3)
+build      : |
+    %python3_setup
+install    : |
+    %python3_install
